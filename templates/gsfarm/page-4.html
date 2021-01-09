@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+    <meta name="google-site-verification" content="ZD4OObUOclRm4XtYkeZdkqzODnVCWZuJO2Zf2NpmewE" />
+
+    <title>Template</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.6.6/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
+      
+      <link href="css/main.min.css" rel="stylesheet">
+      
+      <script>
+        // Picture element HTML5 shiv https://scottjehl.github.io/picturefill/
+        document.createElement( "picture" );
+      </script>
+      <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+  
+</head>
+
+<body id="page-top">
+
+    <div id="nav"></div>
+
+      <section class="mt-20 pb-32">
+          <h2 class="leading-tight text-center text-black py-8">
+            <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">Features</small>
+            This is a vue feed with google docs.
+          </h2>
+            <div class="container mx-auto px-2">
+                <div class="flex flex-wrap text-center">
+                    <div class="w-full mb-4" data-aos="fade-up">
+                        <div id="blog">
+                          <div class="load-out  mt-32 text-grey h-screen">loading...</div>
+
+                            <div class="p-12" v-for="entry in entries">
+                              <h2 class="pb-2">{{entry.gsx$title.$t}}</h2>
+                              <div v-html="entry.gsx$moretext.$t"></div>
+                              <img :src="entry.gsx$imageurl.$t" class="pt-5" />
+                            </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+        </section>
+
+        <div id="footer-2"></div>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="https://idangero.us/swiper/dist/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/move-image.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="vue/app.js"></script>
+
+
+  </body>
+
+</html>

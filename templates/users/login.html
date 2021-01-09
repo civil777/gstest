@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Log In
+{% endblock page_title %}
+
+
+{% block content %}
+
+    <div>
+
+
+        <div class="md:flex md:h-screen">
+        <div class="bg-cover bg-top w-full md:w-1/2 h-64 md:h-auto text-center" style="background-image: url('/static/img/1.png')">
+            <div class="flex h-full">
+            </div>
+        </div>
+        <div class="flex w-full md:w-1/2">
+            <div class="w-full md:w-2/3 self-center mx-auto">
+
+                <div class="md:rounded sm:border-0 md:border border-gray-low mb-8">
+
+                                <div class="text-center text-lg text-gray-high mx-6 mt-6">
+                    gs ecotech 회원전용 페이지 입니다!
+                </div>
+                <div class="p-6">
+                    <form method="POST" action="{% url "users:login" %}">
+                        {% csrf_token %}
+                            <span class="font-mono text-lg text-gray-800">Email</span>
+                            {{form.email}}
+                            <span class="font-mono text-lg text-gray-800">Password</span>
+                            {{form.password}}
+                        <button class="bg-teal-400 hover:bg-green-700 text-black w-full font-semibold py-3 px-4 my-2 rounded shadow">Login</button>
+                    </form>
+
+
+                </div>
+                </div>
+
+                <div class="border-t border-b md:border md:rounded border-gray-low p-4 text-center">
+                    아직 계정이 없으신가요? <a class="ml-3 text-purple-400 hover:underline hover:text-gray-600" href="{% url "users:signup" %}">회원가입</a>
+ 
+                </div>
+
+
+                </div>
+        </div>
+        </div>
+    </div>
+    
+
+
+
+    
+{% endblock content %}
