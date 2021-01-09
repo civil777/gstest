@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="img/favicon.png" rel="icon" type="image/x-icon" />
+      
+  
+      <title>Template</title>
+      
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.6.6/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
+    
+    <link href="{% static 'css/main.min.css' %}" rel="stylesheet">
+
+    <script>
+      // Picture element HTML5 shiv https://scottjehl.github.io/picturefill/
+      document.createElement( "picture" );
+    </script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+
+  </head>
+
+<body id="page-top">
+
+    
+    <div id="nav"></div>
+
+
+    <header class="bg-img h-screen bg-purple-darker text-white bg-scroll"
+      data-image-src="{% static 'img/gsf/3.jpg' %}">
+
+        <div class="load-in container flex flex-col h-full mx-auto">
+          <div class="flex-grow flex flex-col justify-center text-center">
+              
+            <div class="type pb-5">
+                <h1 class="inline-block text-2xl" data-items="GS농장의 GSECOTECH과 연계하여 운영되는 친환경 자원화 농장입니다!!!"></h1><i class="inline-block"></i>
+            </div>
+
+              <h1 class="text-5xl">GS 농장 | 스마트 친환경 자원화 시스템</h1>
+              
+            <footer class="sm:mt-4">
+                <a href="#1" class="inline-block px-8 py-4 my-4 bg-purple rounded text-white no-underline tracking-wide
+                  font-medium hover:bg-purple-light">
+                  더 알아보기
+                </a>
+            </footer>
+          </div>
+        </div>
+      </header>
+
+
+      <section class="text-white p-8 bg-video">
+        <div class="container mx-auto">
+            <div class="flex-grow flex flex-col justify-center text-center">
+              <div class="overlay opacity-50 "></div>
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="{% static 'img/gsf/video-01.mp4' %}" type="video/mp4">
+              </video>
+              <div class="absolute pin z-10 flex-grow flex flex-col justify-center text-center" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto lg:py-24">
+                    <h3 class="">gs 농장</h3>
+                    <p class="sm:mt-4 leading-loose">
+                      GS농장은 스마트 자원화 시스템을 이용한 친환경 차세대 농장으로 농장에 사용되는 대부분의 제품들이 재활용 혹은 자원화 순환 제품입니다.
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      
+
+      <section class="p-8" data-aos="fade-up" data-aos-duration="1000">
+          <div class="container mx-auto">
+              <div class="flex-grow flex flex-col justify-center text-center">
+                <div class="w-full sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 mx-auto text-center text-black lg:py-24">
+                    <h3 class="text-2xl font-medium">자원화 제품 소개영상 </h3>
+                    <p class="sm:mt-4 leading-loose pb-8">
+                        GS농장에서 사용되는 자원화 제품들의 소개 영상입니다. 
+                        자원화 벽돌, 자원화 사료, 자원화 비료, 자원화 연료 펠렛 등이 있습니다.
+                        친환경적이고 기존의 농어촌의 쓰레기를 재 자원화 하여 탄소배출을 줄일 뿐만아니라 농촌의 화재 예방, 병충해 피해 예방, 처리곤란 쓰레기 재활용 
+                        등에 영향을 끼치는 친환경 사회적 기업입니다.
+                        
+                      </p>
+                      <div class="embed-responsive embed-responsive-16by9 bg-black">
+                          <img class="play embed-responsive-item" src="{% static 'img/gsf/1.jpg' %}" 
+                          data-video="https://youtu.be/XG2EdDL_f5s" allowfullscreen>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+
+        <section class="p-8 bg-img-parallax">
+            <div class="load-in container flex flex-col h-full mx-auto">
+                <div class="flex-grow flex flex-col justify-center text-white text-center">
+                    <h1 class="text-5xl">GS농장 현장체험</h1>
+                    
+                  <p class="sm:mt-4">
+                      자원화 순환 시스템을 통하여 운영되는 GS농장에서는 현장체험 기회를 제공하고 있습니다.
+                  </p>
+                  <footer class="sm:mt-4">
+                      <a href="#1" class="inline-block px-8 py-4 my-4 bg-purple rounded text-white no-underline tracking-wide
+                        font-medium hover:bg-purple-light">
+                        더 알아보기
+                      </a>
+                  </footer>
+                </div>
+              </div>
+          </section>
+
+
+      <section class="bg-grey-lightest md:flex" data-aos="fade-up" data-aos-duration="1000">
+        <div class="md:w-1/2">
+          <img src="{% static 'img/gsf/2.jpg' %}" alt="" class="block">
+        </div>
+        <article class="p-8 max-w-sm md:flex md:flex-col md:justify-center lg:px-32 lg:max-w-md">
+          <h2 class="leading-tight">
+            <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">gs 농장의 동물들</small>
+            닭 강아지 등 다수의 동물을 자연 친화적으로 키우고 있습니다.
+          </h2>
+          <p class="mt-2 text-grey-darkest">
+           추후 염소 돼지 등 여러 동물들이 더 들어오 예정입니다.
+          </p>
+        </article>
+      </section>
+
+    <section class="hero-pattern">
+      <div class="w-full sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 mx-auto text-center text-black lg:py-24">
+      <div class="embed-responsive embed-responsive-16by9 bg-black">
+        <iframe src="https://www.youtube.com/embed/UIePb05ExTw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+    </section>
+
+     <!-- <section id="1" class="p-8" data-aos="fade-up">
+        <div class="container mx-auto">
+          <article class="max-w-sm md:py-8 lg:py-32 lg:max-w-md">
+            <h2 class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">People love it</h2>
+            <blockquote class="leading-normal mt-4">
+              <article class="text-2xl font-medium">
+                "Since using this app, the productivity of our whole team improved to such a high level that I never
+                expected."
+              </article>
+              <footer class="mt-2 text-base font-medium text-grey-dark">
+                &mdash; John Doe, CEO of AwesomeStartup
+              </footer>
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <section class="p-8 bg-grey-lightest" data-aos="fade-up">
+        <h2 class="leading-tight text-center text-black lg:py-8">
+          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">Features</small>
+          Everything your team needs
+        </h2>
+        <div class="container mx-auto">
+          <div class="sm:flex sm:flex-wrap">
+            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+                <img src="https://images.unsplash.com/photo-1533324416070-5678d4e9dc56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+              <p class="mt-4">
+                <strong class="font-medium">Complete Overview.</strong> Always have the projects mission in mind, every single tasks you do is
+                part of a bigger picture.
+              </p>
+            </article>
+            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+                <img src="https://images.unsplash.com/photo-1547010364-858c5b011e23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+              <p class="mt-4">
+                <strong>No information overload-in.</strong> Just learn about things you need to know to solve a specific task.
+              </p>
+            </article>
+            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+                <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+              <p class="mt-4">
+                <strong>Better communication</strong> leads to better results.
+              </p>
+            </article>
+            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+                <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+              <p class="mt-4">
+                <strong>24/7 service.</strong> You and your team just work on your team. We take care of keeping your
+                systems up-to-date.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="p-8">
+        <h2 class="leading-tight text-center text-black lg:py-8">
+          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">
+            Our Plans
+          </small>
+          You have all the features in every plan, only the number of users varies.
+        </h2>
+  
+        <div class="container mx-auto md:flex md:flex-wrap md:justify-center">
+          <article class="my-8 text-center md:w-1/2 md:px-8 lg:w-1/3">
+            <h3 class="font-medium">
+              <small class="block uppercase text-grey-dark tracking-wide text-xs">Starter</small>
+              <span class="text-5xl">
+                <span class="text-3xl -mr-2">$</span>
+                <span class="-mr-2">9</span>
+                <sub class="text-sm">/mo</sub>
+              </span>
+            </h3>
+            <p>
+              For small teams and startups.
+            </p>
+            <ul class="list-reset text-left mt-4">
+              <li class="border-t py-4">Up to <strong>5 users</strong></li>
+              <li class="border-t py-4">Dashboard Overview</li>
+              <li class="border-t py-4">Timeline based communication</li>
+              <li class="border-t py-4">Automated information collection per task</li>
+              <li class="border-t py-4">E-Mail Support</li>
+              <li class="border-t border-b py-4">14 days trial</li>
+            </ul>
+            <a href="#" class="block my-4 bg-purple rounded text-white no-underline px-6 py-4 hover:bg-purple-light">
+              Choose this plan
+            </a>
+          </article>
+    
+          <article class="my-8 text-center md:w-1/2 md:px-8 lg:w-1/3">
+            <h3 class="font-medium">
+              <small class="block uppercase text-grey-dark tracking-wide text-xs">Business</small>
+              <span class="text-5xl">
+                <span class="text-3xl -mr-2">$</span>
+                <span class="-mr-2">19</span>
+                <sub class="text-sm">/mo</sub>
+              </span>
+            </h3>
+            <p>
+              For larger companies
+            </p>
+            <ul class="list-reset text-left mt-4">
+              <li class="border-t py-4">Up to <strong>25 users</strong></li>
+              <li class="border-t py-4">Dashboard Overview</li>
+              <li class="border-t py-4">Timeline based communication</li>
+              <li class="border-t py-4">Automated information collection per task</li>
+              <li class="border-t py-4">E-Mail Support</li>
+              <li class="border-t border-b py-4">14 days trial</li>
+            </ul>
+            <a href="#" class="block my-4 bg-purple rounded text-white no-underline px-6 py-4 hover:bg-purple-light">
+              Choose this plan
+            </a>
+          </article>
+    
+          <article class="my-8 text-center md:w-1/2 md:px-8 lg:w-1/3">
+            <h3 class="font-medium">
+              <small class="block uppercase text-grey-dark tracking-wide text-xs">Enterprise</small>
+              <span class="text-3xl lg:text-5xl">
+                <span class="-mr-2">On Request</span>
+              </span>
+            </h3>
+            <p>
+              For the big players
+            </p>
+            <ul class="list-reset text-left mt-4">
+              <li class="border-t py-4">Up to <strong>25 users</strong></li>
+              <li class="border-t py-4">Dashboard Overview</li>
+              <li class="border-t py-4">Timeline based communication</li>
+              <li class="border-t py-4">Automated information collection per task</li>
+              <li class="border-t py-4">E-Mail Support</li>
+              <li class="border-t border-b py-4">14 days trial</li>
+            </ul>
+            <a href="#" class="block my-4 bg-purple rounded text-white no-underline px-6 py-4 hover:bg-purple-light">
+              Choose this plan
+            </a>
+          </article>
+        </div>
+  
+      </section>
+
+      <div id="footer"></div>
+  -->
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+    <script src="https://idangero.us/swiper/dist/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+
+    <script src="{% static 'js/main.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="{% static 'js/gsap/gsap.js' %}"></script>
+
+    <script>AOS.init();</script>
+  </body>
+
+</html>

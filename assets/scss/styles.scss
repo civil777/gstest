@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+
+.search-box {
+  transition: box-shadow 0.2s linear;
+}
+
+.nav_link {
+  @apply ml-8 border-b-2 border-white h-full flex items-center;
+  a {
+    @apply py-10 px-5;
+  }
+  &:hover {
+    @apply border-green-400;
+  }
+}
+
+@keyframes messageFadIn {
+
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+.message{
+  animation: messageFadIn 5s ease-in-out forwards;
+  &.error{
+    @apply bg-red-600;
+  }
+  &.debug{
+    @apply bg-blue-500;
+  }
+  &.info{
+    @apply bg-green-500;
+  }
+  &.success{
+    @apply bg-green-700;
+  }
+  &.warning{
+    @apply bg-red-700;
+  }
+}
+
+@tailwind utilities;
+
+

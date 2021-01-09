@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+{{room.name}}
+{% endblock %}
+
+{% block content %}
+<div>
+  <h1> {{room.name}} </h1>
+  <h3> {{room.description}}</h3>
+</div>
+<div>
+  <h2>By: {{room.host.username}}</h2> 
+  {% if room.host.인증_회원 %}
+    (인증된 회원입니다.)
+  {% endif %}
+  <h3> item type </h3>
+  <ul>
+  <li>{{room.item_type}}</li>
+  </ul>
+</div>
+{% endblock %} 
