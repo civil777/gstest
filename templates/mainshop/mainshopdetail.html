@@ -1,22 +1,22 @@
-<!-- component -->
-<!-- This is an example component -->
-<div>
+{% extends 'base2.html' %}
+{% load static %}
+
 	
-    <!DOCTYPE html>
-    <html lang="en" >
+  {% block content %}
     <head>
       <meta charset="UTF-8">
-      <title>CodePen - Product Page with TailwindCSS</title>
+     
       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap'><link rel="stylesheet" href="./style.css">
     
     </head>
+
     <body class="antialiased">
       
     
     <div class="bg-indigo-700 text-indigo-200 md:text-center py-2 px-4">
-      Inspired from Dribbble Shot by <a href="https://dribbble.com/shots/14127375-Product-Page" class="font-bold underline hover:text-indigo-100">Vishnu Prasad</a>.
-      See his works on <a href="https://dribbble.com/vlockn" class="font-bold underline hover:text-indigo-100">Dribbble</a>.
+      GS농장의 특별 회원만의 할인상품을 만나보세요!  <a href="#" class="font-bold underline hover:text-indigo-100">특별회원 홈페이지</a>.
+      GS농장의 동물들을 직접 체험해보세요!  <a href="/gsfarm/" class="font-bold underline hover:text-indigo-100"> GS농장 소개</a>.
     </div>
     
     <div class="bg-white shadow-sm sticky top-0">
@@ -30,15 +30,6 @@
           </button>
           <!-- ./ Menu Trigger -->
     
-          <a href="#" class="font-bold text-gray-700 text-2xl">Shop.</a>
-    
-          <div class="hidden md:flex space-x-3 flex-1 lg:ml-8">
-            <a href="#" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Electronics</a>
-            <a href="#" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Fashion</a>
-            <a href="#" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Tools</a>
-            <a href="#" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Books</a>
-            <a href="#" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">More</a>
-          </div>
     
           <div class="flex items-center space-x-4">
             <div class="relative hidden md:block">
@@ -78,19 +69,19 @@
       <!-- Breadcrumbs -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center space-x-2 text-gray-400 text-sm">
-          <a href="#" class="hover:underline hover:text-gray-600">Home</a>
+          <a href="#" class="hover:underline hover:text-gray-600">스토어</a>
           <span>
             <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </span>
-          <a href="#" class="hover:underline hover:text-gray-600">Electronics</a>
+          <a href="#" class="hover:underline hover:text-gray-600">음식물쓰레기 처리기</a>
           <span>
             <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </span>
-          <span>Headphones</span>
+          <span class="text-black">가정용</span>
         </div>
       </div>
       <!-- ./ Breadcrumbs -->
@@ -100,8 +91,8 @@
           <div class="md:flex-1 px-4">
             <div x-data="{ image: 1 }" x-cloak>
               <div class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4">
-                <div x-show="image === 1" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
-                  <span class="text-5xl">1</span>
+                <div x-show="image === 1" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center bg-contain bg-no-repeat bg-center" style="background-image: url({% static 'image/p/1.jpg' %})">
+                  <span class="text-5xl"></span>
                 </div>
     
                 <div x-show="image === 2" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
@@ -129,27 +120,27 @@
             </div>
           </div>
           <div class="md:flex-1 px-4">
-            <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2>
-            <p class="text-gray-500 text-sm">By <a href="#" class="text-indigo-600 hover:underline">ABC Company</a></p>
+            <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">음식물 쓰레기 처리기 (가정용)</h2>
+            
     
             <div class="flex items-center space-x-4 my-4">
               <div>
                 <div class="rounded-lg bg-gray-100 flex py-2 px-3">
-                  <span class="text-indigo-400 mr-1 mt-1">$</span>
-                  <span class="font-bold text-indigo-600 text-3xl">25</span>
+                  <span class="text-indigo-400 mr-1 mt-1">&#8361;</span>
+                  <span class="font-bold text-indigo-600 text-3xl">0</span>
                 </div>
               </div>
               <div class="flex-1">
-                <p class="text-green-500 text-xl font-semibold">Save 12%</p>
-                <p class="text-gray-400 text-sm">Inclusive of all Taxes.</p>
+                <p class="text-green-500 text-xl font-semibold">Save 50%</p>
+                <p class="text-gray-400 text-sm">부가세 미포함.</p>
               </div>
             </div>
     
-            <p class="text-gray-500">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.</p>
+            <p class="text-gray-500">4~5인용 가정용 음식물 쓰레기 처리기 입니다.</p>
     
             <div class="flex py-4 space-x-4">
               <div class="relative">
-                <div class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">Qty</div>
+                <div class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">수량</div>
                 <select class="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1">
                   <option>1</option>
                   <option>2</option>
@@ -164,7 +155,7 @@
               </div>
     
               <button type="button" class="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
-                Add to Cart
+                장바구니에 넣기 
               </button>
             </div>
           </div>
@@ -174,6 +165,4 @@
       </body>
     <!-- partial -->
       <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js'></script>
-    </html>
-    
-    </div>
+    {% endblock %}

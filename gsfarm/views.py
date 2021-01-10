@@ -3,7 +3,6 @@ from django.views import generic
 from . models import Gsfarmmodel
 
 
-class HometestView(generic.ListView):
+class GsfarmView(generic.ListView):
     model = Gsfarmmodel
     template_name = 'gsfarm/index.html'
-
