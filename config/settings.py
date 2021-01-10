@@ -48,6 +48,7 @@ PROJECT_APPS = [
     "conversations.apps.ConversationsConfig",
     "homes.apps.HomesConfig",
     "gsfarm.apps.GsfarmConfig",
+    "mainshop.apps.MainshopConfig",
 ]
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
