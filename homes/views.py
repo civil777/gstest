@@ -7,3 +7,7 @@ class HometestView(generic.ListView):
     model = Homesmodel
     template_name = 'homes/home_list.html'
 
+class HomeintestView(generic.ListView):
+    model = Homesmodel
+    template_name = 'homes/homeint_list.html'
+
