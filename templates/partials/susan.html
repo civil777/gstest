@@ -36,8 +36,8 @@ img {
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/2.jpg' %}" alt="content" onclick="myFunction(this);">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/2.jpg' %}" alt="content" onclick="myFunction(this);">
             </div>
           </div>
           <div class="xl:w-1/4 md:w-1/2 p-4">
@@ -80,25 +80,40 @@ img {
               <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/10.jpg' %}" alt="content" onclick="myFunction(this);">
             </div>
           </div>
-        
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/11.JPG' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/12.JPG' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/13.JPG' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+        </div>
       </div>
-    </div>
-
+      
     <!-- The expanding image container -->
-<div class="container mx-auto relative">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn text-3xl text-black z-10">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" class="w-1/2 mx-auto justify-center">
-  
-    <!-- Image text -->
+    <div class="container mx-auto relative">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn text-3xl text-black z-10">&times;</span>
+      
+      <!-- Expanded image -->
+      <img id="expandedImg" class="w-1/2 mx-auto justify-center">
+      
+      <!-- Image text -->
+      
+    </div>
     
-</div>
-
-<script>
+    <script>
     
-function myFunction(imgs) {
+      function myFunction(imgs) {
     
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");

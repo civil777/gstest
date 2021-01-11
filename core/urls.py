@@ -12,6 +12,7 @@ urlpatterns = [
     path("in/", home_views.HomeintestView.as_view(), name="homein"),
     path("su/", home_views.SuView.as_view(), name="su"),
     path("a1/", home_views.A1View.as_view(), name="a1"),
+    path("b1/", home_views.B1View.as_view(), name="b1"),
     path("a1/a11/", home_views.A11View.as_view(), name="a11"),
     path("a1/a12/", home_views.A12View.as_view(), name="a12"),
     path("a1/a13/", home_views.A13View.as_view(), name="a13"),

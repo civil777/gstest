@@ -1,0 +1,116 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">친환경 자원화 제품 </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-700">거성에코텍의 특허기술이 들어간 친환경 자원화 제품 입니다.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="md:w-1/4 p-4">
+        <a href="b11/">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-150 rounded w-full object-cover object-center mb-6 transform  hover:scale-75 transition duration-300" src="{% static 'img/gs/e/1.JPG' %}">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">LED</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">LED부품, LED Light</h2>
+            <ul class="list-disc list-inside bg-rose-200 leading-relaxed text-base">
+                <li>
+                    GS PCB(PE PCB)
+                </li>
+                <li>
+                    면라이트 (300~1200 series 정전기능, 디밍기능 포함)
+                </li>
+                <li>
+                    다운라이트(3"~9")
+                </li>
+                <li>
+                    Bulb Type (MR16, Par30,38 움직임 sensor포함)
+                </li>
+                <li>
+                    그외 (L광등, 주차장등, 공장등, 투광등, 가로등, 보안등)
+                </li>
+            </ul>
+        </div>
+        </a>
+        </div>
+        <div class="md:w-1/4 p-4">
+            <a href="#/">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-150 rounded w-full object-cover object-center mb-6 transform  hover:scale-75 transition duration-300" src="{% static 'img/gs/e/2.jpg' %}">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">수질, 토양개선제</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">GS uniclean(수질, 토양 개선제)</h2>
+                <ul class="list-disc list-inside bg-rose-200 leading-relaxed text-base">
+                    <li>
+                        수질, 악취, 적조, 녹조 제거
+                    </li>
+                    <li>
+                        바이오 연료 정화
+                    </li>
+                    <li>
+                        돈분 정화
+                    </li>
+                    <li>
+                        토질 - 토양개선제 (염분제거 토질 향상 등)
+                    </li>
+                </ul>
+            </div>
+            </a>
+            </div>
+            <div class="md:w-1/4 p-4">
+                <a href="#/">
+                  <div class="bg-gray-100 p-6 rounded-lg">
+                    <img class="h-150 rounded w-full object-cover object-center mb-6 transform  hover:scale-75 transition duration-300" src="{% static 'img/gs/e/3.jpg' %}">
+                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">대리석</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Cold Spring사 미국산 천연석</h2>
+                    <ul class="list-disc list-inside bg-rose-200 leading-relaxed text-base">
+                        <li>
+                            외벽, 내벽 대리석
+                        </li>
+                        <li>
+                            주방 씽크대 상판
+                        </li>
+                        <li>
+                            마루, 바닥제
+                        </li>
+                        <li>
+                            걸레받이
+                        </li>
+                    </ul>
+                </div>
+                </a>
+                </div>  
+                <div class="md:w-1/4 p-4">
+                    <a href="#/">
+                      <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-150 rounded w-full object-cover object-center mb-6 transform  hover:scale-75 transition duration-300" src="{% static 'img/gs/e/4.jpg' %}">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">농,어촌 쓰레기 자원화</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">자원화 벽돌, 내외장 판재</h2>
+                        <ul class="list-disc list-inside bg-rose-200 leading-relaxed text-base">
+                            <li>
+                                친환경 자원화 벽돌
+                            </li>
+                            <li>
+                                친환경 자원화 판재(내구성 내화성 테스트 합격)
+                            </li>
+                            <li>
+                                농 어촌 쓰레기 자원화 - 친환경 제품으로 재탄생
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    </a>
+                    </div>        
+      </div>
+    </div>
+
+
+  </section>
+
+  {% endblock %}
