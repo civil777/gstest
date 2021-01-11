@@ -1,0 +1,121 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 250px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+</style>
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">특허 및 수상 </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-700">거성 에코텍은 친환경기업으로 지구 환경 보존을 위한 연구와 개발을 지속적으로 하고 있습니다! 다양한 친환경 제품과 관련된 특허를 확인해보세요.</p>
+        <p class="mt-4 text-red-600 ">*이미지를 누르시면 하단에 크게 확대되어 표시됩니다.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/1.jpg' %}" alt="content" onclick="myFunction(this);">
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/2.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/3.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/4.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/5.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/6.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/7.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/8.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/9.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-80 rounded w-full object-cover object-center mb-6 transform  hover:scale-125 transition duration-300" src="{% static 'img/gs/a/10.jpg' %}" alt="content" onclick="myFunction(this);">
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+<div class="container mx-auto relative">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn text-3xl text-black z-10">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" class="w-1/2 mx-auto justify-center">
+  
+    <!-- Image text -->
+    
+</div>
+
+<script>
+    
+function myFunction(imgs) {
+    
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+
+</script>
+
+
+
+  </section>
+
+  {% endblock %}

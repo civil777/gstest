@@ -11,3 +11,6 @@ class HomeintestView(generic.ListView):
     model = Homesmodel
     template_name = 'homes/homeint_list.html'
 
+class SuView(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/susan.html'
