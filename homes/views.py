@@ -32,3 +32,7 @@ class A13View(generic.ListView):
 class B1View(generic.ListView):
     model = Homesmodel
     template_name = 'partials/b1.html'
+
+class B11View(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/b11.html'
