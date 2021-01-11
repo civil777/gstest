@@ -14,3 +14,17 @@ class HomeintestView(generic.ListView):
 class SuView(generic.ListView):
     model = Homesmodel
     template_name = 'partials/susan.html'
+
+class A1View(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/a1.html'
+
+class A11View(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/a11.html'
+class A12View(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/a12.html'
+class A13View(generic.ListView):
+    model = Homesmodel
+    template_name = 'partials/a13.html'
