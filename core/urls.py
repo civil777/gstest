@@ -13,6 +13,7 @@ urlpatterns = [
     path("su/", home_views.SuView.as_view(), name="su"),
     path("a1/", home_views.A1View.as_view(), name="a1"),
     path("b1/", home_views.B1View.as_view(), name="b1"),
+    path("c1/", home_views.C1View.as_view(), name="c1"),
     path("b1/b11/", home_views.B11View.as_view(), name="b11"),
     path("b1/b12/", home_views.B12View.as_view(), name="b12"),
     path("b1/b13/", home_views.B13View.as_view(), name="b13"),

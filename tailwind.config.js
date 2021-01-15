@@ -1,6 +1,7 @@
 module.exports = {
   theme: {
     extend: {
+      backgroundColor: ['active'],
       spacing: {
         "25vh": "25vh",
         "50vh": "50vh",
